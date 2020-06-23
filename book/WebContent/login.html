@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div class="bigzhuye">
+			<!--导航栏-->
+			<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">实时政治</a></li>
+				<li><a href="#">最新新闻</a></li>
+			</ul>
+		</div>
+		<!-- 主体内容 （登陆界面）-->
+		<div class="main">
+		<!--登录界面 -->
+		<div class="main1">
+				<div class="index">
+					<form action="LoginServlet" method="post">
+						<p class="headline">用户登陆</p>
+						<p class="astyle">用户名：</p>
+						<input type="text" name="uname" value="请输入您的用户名">
+						<p class="astyle">密码：</p>
+						<input type="text" name="upwd" value="请输入密码"><br>
+						 身份：<input type="radio" name="admin" value="管理员">管理员<input type="radio" name="student" value="学生">学生
+					    <p class="astyle">验证码</p>
+	                    <input type="text" name="checkCode"  id="checkCodeid" size="4">
+	                    <!-- 验证码 -->
+	                     <a href="javascript:reloadCheckImg();"><img src="index.jsp"></a>
+	                     <span id="tip"></span>
+						<input type="submit" value="登陆" name="login" >
+						</br>
+						<p>
+						<p class="bstyle">没有账号？</p>
+						<p class="cstyle"><a href="regster.html">立即注册</a></p>
+					</form>
+			</div>
+		</div>
+			<!--新闻-->
+		<div class="main2">
+			<h1>图书管理系统</h1></br>
+				<h4>快&nbsp;新&nbsp;热</h4>
+				</br>
+				<p>国家政治</p></br>
+				<p>头条</p></br>
+				<p>娱乐</p></br>
+		</div>
+		</div>
+		<!--页脚-->
+		<div class="foot">
+			<ul>
+					<li><a href="#">实时新闻</a></li>
+					<li><a href="#">最新新闻</a></li>
+					<li><a href="#">最新政治</a></li>
+					<li><a href="#">广告服务</a></li>
+				</ul>
+		</div>
+		</div>
+	</body>
+</html>

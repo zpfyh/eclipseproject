@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/zc.css" />
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+	</head>
+	<body>
+		<div class="nav">
+			<h2>图书管理系统用户注册界面</h2>
+		</div>
+		<div class="box">
+			<form action="ZhuceServlet" method="post">
+				<div class="b1">
+					用户编号：<input type="text"  name="id" placeholder="请输入用户编号"/>
+				</div>
+				<br>
+				<div class="b2">
+					用户姓名：<input type="text"  name="name" placeholder="请输入用户姓名"/>
+				</div>
+				<br>
+				<div class="b3">
+					用户密码：<input type="text" name="password"  placeholder="确认你的密码"/>
+				</div>
+				
+				<div class="b6">
+				       <input type="submit" value="提交"/><input type="reset" value="重置"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
